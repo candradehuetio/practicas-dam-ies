@@ -15,10 +15,13 @@ body {
 
 header, main, footer{
     background-color: #3B413C;
-    padding-bottom: 5rem;
 }
 
 header{
+    border-radius: 1rem;
+    margin-bottom: 5%;
+}
+main{
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
@@ -27,14 +30,34 @@ footer{
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+header > nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+header>nav>ul > li > a{
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    
+}
 
-header > section{
+header>nav>ul>li:hover{
+    background-color: #DAF0EE;
+    a{
+        color: #3B413C;
+    }
+}
+
+.sectionMinombre{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-header > section > h1{
+.sectionMinombre > h1{
     padding-top: 1em;
     padding-bottom: 1em;
     letter-spacing: 10px;
@@ -44,7 +67,7 @@ header > section > h1{
     margin-top: 1rem;
 }
 
-header > aside{
+.asideImg{
     width: 20%;
     position: relative;
     top: 1rem;
@@ -56,7 +79,7 @@ header > aside{
     border-radius: 1rem;
 }
 
-header > aside > img{
+.asideImg > img{
     width: 100%;
     border-radius: 1em;
 
@@ -86,19 +109,6 @@ main > section > ul{
     flex-direction: column;
     gap: 1em;
 }
-
-.java{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.java > div{
-    display: inline-block;
-    width: 100%;
-}
-
-
 
 footer > p{
     padding-top: 5%;

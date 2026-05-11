@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="p2.html">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h1>Mi Formulario</h1>
+            
+            <label for="">Escribe una sugerencia</label><br>
+            <input type="text"><br>
+
+            <article>
+                <label>Por donde quieres contactarme</label>
+                <select name="" id="contacto">
+                    <option value="" selected disabled>Elige una opcion</option>
+                    <option value="">WhatsApp</option>
+                    <option value="">Email</option>
+                    <option value="">LinkedIn</option>
+                    <option value="">Discord</option>
+                </select>
+            </article>
+        </form>
+    </main>
+    <script>
+        let select = document.getElementById('contacto');
+        select.addEventListener('change', ()=>{
+            let opcion = select.value;
+            console.log(opcion);
+        })
+    </script>
+</body>
+</html>
